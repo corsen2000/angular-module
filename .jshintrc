@@ -1,0 +1,19 @@
+{
+  "unused": true,
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "jQuery": true,
+    "module": true,
+    "require": true,
+    "angular": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "expect": true,
+    "window": true,
+    "inject": true
+  }
+}

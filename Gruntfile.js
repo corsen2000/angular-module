@@ -58,9 +58,17 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    jshint: {
+      all: {
+        options: {
+          jshintrc: true
+        },
+        src: ['Gruntfile.js', 'src/**/*.js']
+      }
     }
   });
 
-  grunt.registerTask('default', ['sass', 'ngAnnotate']);
+  grunt.registerTask('default', ['jshint', 'sass', 'ngAnnotate']);
   grunt.registerTask('serve', ['connect', 'watch']);
-}
+};
