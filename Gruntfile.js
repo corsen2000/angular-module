@@ -72,6 +72,20 @@ module.exports = function(grunt) {
           config: ".jscsrc"
       },
       src: ['Gruntfile.js', "src/**/*.js"]
+    },
+    cssmin: {
+      dist: {
+        files: {
+          'dist/module.min.css': ['dist/module.css']
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          'dist/module.min.js': ['dist/module.js']
+        }
+      }
     }
   });
 
