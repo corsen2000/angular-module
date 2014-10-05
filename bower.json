@@ -1,0 +1,21 @@
+{
+  "name": "module",
+  "version": "0.0.0",
+  "authors": [
+    "Bryan Chaiklin <bcchaiklin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.26",
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0",
+    "angular-mocks": "~1.2.26"
+  }
+}
