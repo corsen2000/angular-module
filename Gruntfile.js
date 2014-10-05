@@ -86,9 +86,11 @@ module.exports = function(grunt) {
           'dist/module.min.js': ['dist/module.js']
         }
       }
-    }
+    },
+    clean: ["dist"]
   });
 
-  grunt.registerTask('default', ['jscs', 'jshint', 'sass', 'ngAnnotate']);
+  grunt.registerTask('default', ['clean', 'jscs', 'jshint', 'sass',
+    'ngAnnotate', 'cssmin', 'uglify']);
   grunt.registerTask('serve', ['connect', 'watch']);
 };
