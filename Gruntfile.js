@@ -66,9 +66,15 @@ module.exports = function(grunt) {
         },
         src: ['Gruntfile.js', 'src/**/*.js']
       }
+    },
+    jscs: {
+      src: "src/**/*.js",
+      options: {
+          config: ".jscsrc"
+      }
     }
   });
 
-  grunt.registerTask('default', ['jshint', 'sass', 'ngAnnotate']);
+  grunt.registerTask('default', ['jscs', 'jshint', 'sass', 'ngAnnotate']);
   grunt.registerTask('serve', ['connect', 'watch']);
 };
