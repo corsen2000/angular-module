@@ -68,10 +68,10 @@ module.exports = function(grunt) {
       }
     },
     jscs: {
-      src: "src/**/*.js",
       options: {
           config: ".jscsrc"
-      }
+      },
+      src: ['Gruntfile.js', "src/**/*.js"]
     }
   });
 
